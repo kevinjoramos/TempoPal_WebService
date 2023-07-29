@@ -1,4 +1,4 @@
-package TempoPal.plugins
+package tempopal.plugins
 
 import io.ktor.server.auth.*
 import io.ktor.client.*

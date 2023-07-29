@@ -1,4 +1,4 @@
-package TempoPal.plugins
+package tempopal.plugins
 
 import io.ktor.server.routing.*
 import io.ktor.server.response.*

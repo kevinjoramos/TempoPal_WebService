@@ -1,4 +1,4 @@
-package TempoPal.plugins
+package tempopal.plugins
 
 import io.ktor.http.*
 import io.ktor.server.plugins.cors.routing.*

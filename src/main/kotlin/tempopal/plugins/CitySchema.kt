@@ -1,4 +1,4 @@
-package TempoPal.plugins
+package tempopal.plugins
 
 import kotlinx.coroutines.*
 import kotlinx.serialization.Serializable
