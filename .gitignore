@@ -31,7 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-/sql_scripts/
-/sql_scripts/bootstrap.sql
-/sql_scripts/raze.sql
-/sql_scripts/test.sql
