@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api")
-public class TimerRestController {
+public class ProjectRestController {
 
     @GetMapping("/timers")
     public String greeting() {
