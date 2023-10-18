@@ -33,6 +33,7 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public Project createUserProject(int userId, Project project) {
         project.setId(0);
+        project.setUserId(userId);
         return projectRepository.save(project);
     }
 
