@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class Entry {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "entry_id")
     private long id;
 
@@ -18,22 +18,22 @@ public class Entry {
     private long elapsedTime;
 
     @Column(name = "user_id")
-    private long user_id;
+    private long userId;
 
     @Column(name = "project_id")
-    private long project_id;
+    private long projectId;
 
     @Column(name = "tag_id")
-    private long tag_id;
+    private long tagId;
 
     public Entry() {}
 
     public Entry(String description, long elapsedTime, long user_id, long project_id, long tag_id) {
         this.description = description;
         this.elapsedTime = elapsedTime;
-        this.user_id = user_id;
-        this.project_id = project_id;
-        this.tag_id = tag_id;
+        this.userId = user_id;
+        this.projectId = project_id;
+        this.tagId = tag_id;
     }
 
     public long getId() {
@@ -60,27 +60,27 @@ public class Entry {
         this.elapsedTime = elapsedTime;
     }
 
-    public long getUser_id() {
-        return user_id;
+    public long getUserId() {
+        return userId;
     }
 
-    public void setUser_id(long user_id) {
-        this.user_id = user_id;
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
-    public long getProject_id() {
-        return project_id;
+    public long getProjectId() {
+        return projectId;
     }
 
-    public void setProject_id(long project_id) {
-        this.project_id = project_id;
+    public void setProjectId(long project_id) {
+        this.projectId = project_id;
     }
 
-    public long getTag_id() {
-        return tag_id;
+    public long getTagId() {
+        return tagId;
     }
 
-    public void setTag_id(long tag_id) {
-        this.tag_id = tag_id;
+    public void setTagId(long tag_id) {
+        this.tagId = tag_id;
     }
 }

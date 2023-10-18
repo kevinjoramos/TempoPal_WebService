@@ -26,7 +26,7 @@ public class TagRestController {
     }
 
     @GetMapping("/tags/{tagId}")
-    public Tag findProject(
+    public Tag findTag(
         @PathVariable int userId,
         @PathVariable int tagId
     ) {
