@@ -13,5 +13,5 @@ public interface ProjectService {
 
     Project updateUserProject(int userId, Project project);
 
-    void deleteById(int userId, int id);
+    void deleteById(int userId, int projectId);
 }

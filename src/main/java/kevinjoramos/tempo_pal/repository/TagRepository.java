@@ -3,4 +3,11 @@ package kevinjoramos.tempo_pal.repository;
 import kevinjoramos.tempo_pal.entity.Tag;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface TagRepository extends JpaRepository<Tag, Integer> {}
+import java.util.List;
+
+public interface TagRepository extends JpaRepository<Tag, Integer> {
+
+    List<Tag> findTagsByUserId(long userId);
+
+    Tag findTagByUserIdAndId(long userId, long tagId);
+}
